@@ -8,9 +8,9 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    onLoad () {
-        this.trun_off_light();
+    onLoad () {       
         this.light = this.node.getChildByName('guang');
+        this.turn_off_light();
     },
     turn_on_light() {
         this.light.active = true;
